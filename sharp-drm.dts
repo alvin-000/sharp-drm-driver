@@ -30,7 +30,7 @@
 		target = <&gpio>;
 		__overlay__ {
 			sharp_pins: sharp_pins {
-				brcm,pins = <23 22>;
+				brcm,pins = <25 24>;
 				brcm,function = <1 1>; /* out */
 			};
 		};
@@ -49,8 +49,8 @@
 				pinctrl-names = "default";
 				pinctrl-0 = <&sharp_pins>;
 
-				vcom-gpios = <&gpio 23 0>;
-				disp-gpios = <&gpio 22 0>;
+				vcom-gpios = <&gpio 25 0>;
+				disp-gpios = <&gpio 24 0>;
 
 				spi-cs-high = <1>;
 				spi-max-frequency = <4000000>;
